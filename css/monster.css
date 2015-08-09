@@ -1,0 +1,214 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    MONSTER
+\*----------------------------------------------------------------------------------------------------------------*/
+.monster {
+	width: 204px;
+    height: 164px;
+	border: 2px solid #333;
+    border-radius: 100%;
+    margin-left: -100px;
+    
+    background-color: rgba(243, 187, 212, 0.7);
+    
+    overflow: hidden;
+    
+    position: absolute;
+    bottom: -92px;
+    left: 50%;
+    
+    z-index: 1000;
+}
+
+.monster .eye {
+	width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    
+    background: #333;
+    
+    position: absolute;
+}
+
+.monster .eye .inner {
+	width: 47%;
+    height: 25%;
+    border-radius: 100%;
+    
+	background: #f2f2f2;
+    
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    
+    /* top between 6-11 */
+    /* left between 3-8 */
+}
+
+.monster .eye.left {
+	top: 20px;
+    left: 55px;
+}
+
+.monster .eye.right {
+	top: 20px;
+    right: 55px;
+}
+
+.monster .mouth {
+	width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    
+	position: absolute;
+    top: 45px;
+    left: 50%;
+    
+    overflow: hidden;
+}
+
+.monster .mouth .inner {
+	width: 26px;
+    height: 26px;
+    border: 3px solid #333;
+    border-radius: 100%;
+    
+    position: absolute;
+    top: -18px;
+    left: -3px;
+    
+    /* top between -17 - -20 */
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    JUMP ANIMATION
+\*----------------------------------------------------------------------------------------------------------------*/
+@-webkit-keyframes jump {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+
+	20% {
+		-webkit-transform: translateY(10px);
+	}
+    
+    40% {
+		-webkit-transform: translateY(-140px);
+	}
+    
+    70% {
+		-webkit-transform: translateY(10px);
+	}
+        
+    80% {
+		-webkit-transform: translateY(10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes jump {
+	0% {
+		-moz-transform: translateY(0);
+	}
+
+	20% {
+		-moz-transform: translateY(10px);
+	}
+    
+    40% {
+		-moz-transform: translateY(-140px);
+	}
+    
+    70% {
+		-moz-transform: translateY(10px);
+	}
+        
+    80% {
+		-moz-transform: translateY(10px);
+	}
+
+	100% {
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes jump {
+	0% {
+		-o-transform: translateY(0);
+	}
+
+	20% {
+		-o-transform: translateY(10px);
+	}
+    
+    40% {
+		-o-transform: translateY(-140px);
+	}
+    
+    70% {
+		-o-transform: translateY(10px);
+	}
+        
+    80% {
+		-o-transform: translateY(10px);
+	}
+
+	100% {
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes jump {
+	0% {
+		transform: translateY(0);
+        -webkit-transform: translateY(0);
+	}
+
+	20% {
+		transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+	}
+    
+    40% {
+		transform: translateY(-140px);
+        -webkit-transform: translateY(-140px);
+	}
+    
+    70% {
+		transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+	}
+        
+    80% {
+		transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+	}
+
+	100% {
+		transform: translateY(0);
+        -webkit-transform: translateY(0);
+	}
+}
+
+.jump {
+	-webkit-animation-name: jump;
+	-moz-animation-name: jump;
+	-o-animation-name: jump;
+	animation-name: jump;
+    
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;    
+    -o-animation-duration: 2s;
+    animation-duration: 2s;    
+}

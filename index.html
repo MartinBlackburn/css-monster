@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="{$locale.selected.languageCode}">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta name="generator" content="Yetti" />
+	<title>CSS monster | Martin Blackburn</title>
+	<meta name="description" content="A little monster created with mostly CSS" />
+	<link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	
+    <!-- CSS -->
+    <link href="css/respond.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/environment.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/monster.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/weather.css" rel="stylesheet" type="text/css" media="screen" />
+    
+    <!-- JS LIB -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38705814-1']);
+        _gaq.push(['_trackPageview', '/project/css-monster']);
+        
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    <div class="background">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+        <div class="cloud cloud5"></div>
+        
+        <div class="sun"></div>
+        
+        <div class="room">
+            <div class="monster">
+                <div class="eye left">
+                    <div class="inner"></div>
+                </div>
+                
+                <div class="eye right">
+                    <div class="inner"></div>
+                </div>
+                
+                <div class="mouth">
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JS -->
+    <script src="js/css-monster/ai.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

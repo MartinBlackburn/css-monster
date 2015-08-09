@@ -1,0 +1,325 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    CLOUDS
+\*----------------------------------------------------------------------------------------------------------------*/
+.cloud {
+	width: 200px; 
+    height: 60px;
+	border-radius: 200px;
+    display: none;
+    
+    background: #fff;
+	
+	position: absolute;
+    top: 60px;
+    left: 0;
+    
+    z-index: 2;
+    
+    -webkit-animation-name: moveclouds;
+	-moz-animation-name: moveclouds;
+	-o-animation-name: moveclouds;
+	animation-name: moveclouds;
+    
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;  
+}
+
+.cloud:before,
+.cloud:after {
+	content: '';
+    
+    width: 100px; 
+    height: 80px;
+	border-radius: 100px;
+    
+	background: #fff;
+	
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+    
+    position: absolute; 
+    top: -15px; 
+    left: 10px;
+}
+
+.cloud:after {
+	width: 120px; 
+    height: 120px;
+    
+	top: -55px; 
+    left: auto; 
+    right: 15px;
+}
+
+.cloud1 {
+    -webkit-animation-duration: 35s;
+    -moz-animation-duration: 35s;    
+    -o-animation-duration: 35s;
+    animation-duration: 35s;  
+    
+    -webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+    -o-transform: scale(0.7);
+	transform: scale(0.7);
+    
+    opacity: 0.7;
+}
+
+.cloud2 {
+    -webkit-animation-duration: 34s;
+    -moz-animation-duration: 34s;    
+    -o-animation-duration: 34s;
+    animation-duration: 34s;  
+    
+    -webkit-animation-delay: -8s;
+    -moz-animation-delay: -8s;
+    -o-animation-delay: -8s;
+    animation-delay: -8s;
+    
+    -webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+    -o-transform: scale(0.6);
+	transform: scale(0.6);
+    
+    opacity: 0.6;
+    
+    top: 80px;
+}
+
+.cloud3 {
+    -webkit-animation-duration: 37s;
+    -moz-animation-duration: 37s;    
+    -o-animation-duration: 37s;
+    animation-duration: 37s;   
+    
+    -webkit-animation-delay: -20s;
+    -moz-animation-delay: -20s;
+    -o-animation-delay: -20s;
+    animation-delay: -20s;
+    
+    -webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+	transform: scale(0.8);
+    
+    opacity: 0.8;
+    
+    top: 180px;
+}
+
+.cloud4 {
+    -webkit-animation-duration: 39s;
+    -moz-animation-duration: 39s;    
+    -o-animation-duration: 39s;
+    animation-duration: 39s;  
+    
+    -webkit-animation-delay: -25s;
+    -moz-animation-delay: -25s;
+    -o-animation-delay: -25s;
+    animation-delay: -25s;
+    
+    -webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+	transform: scale(0.5);
+    
+    opacity: 0.5;
+    
+    top: 120px;
+}
+
+.cloud5 {
+    -webkit-animation-duration: 38s;
+    -moz-animation-duration: 38s;    
+    -o-animation-duration: 38s;
+    animation-duration: 38s;  
+    
+    -webkit-animation-delay: -30s;
+    -moz-animation-delay: -30s;
+    -o-animation-delay: -30s;
+    animation-delay: -30s;
+    
+    -webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+	transform: scale(0.75);
+    
+    opacity: 0.75;
+    
+    top: 150px;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {
+    	left: -50%;
+    }
+    
+	100% {
+    	left: 110%
+    }
+}
+
+@-moz-keyframes moveclouds {
+	0% {
+    	left: -50%;
+    }
+    
+	100% {
+    	left: 110%
+    }
+}
+
+@-o-keyframes moveclouds {
+	0% {
+    	left: -50%;
+    }
+    
+	100% {
+    	left: 110%
+    }
+}
+
+@keyframes moveclouds {
+	0% {
+    	left: -50%;
+    }
+    
+	100% {
+    	left: 110%
+    }
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    SUN
+\*----------------------------------------------------------------------------------------------------------------*/
+.sun {
+	width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    display: none;
+    
+    box-shadow: 0 0 30px 30px yellow;
+    
+    background: yellow;
+    
+	position: absolute;
+    top: -75px;
+    left: -75px;
+    
+    z-index: 1;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    RAIN
+\*----------------------------------------------------------------------------------------------------------------*/
+.drop {
+	width: 1px;
+	height: 89px;
+    
+    background: -moz-linear-gradient(top,  rgba(13,52,58,1) 0%, rgba(255,255,255,0.6) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(13,52,58,1)), color-stop(100%,rgba(255,255,255,0.6)));
+    background: -webkit-linear-gradient(top,  rgba(13,52,58,1) 0%,rgba(255,255,255,0.6) 100%);
+    background: -o-linear-gradient(top,  rgba(13,52,58,1) 0%,rgba(255,255,255,0.6) 100%);
+    background: -ms-linear-gradient(top,  rgba(13,52,58,1) 0%,rgba(255,255,255,0.6) 100%);
+    background: linear-gradient(to bottom,  rgba(13,52,58,1) 0%,rgba(255,255,255,0.6) 100%);
+    
+	position: absolute;
+	bottom: 200px;
+    
+	-webkit-animation: fall 1s linear infinite;
+    -moz-animation: fall 1s linear infinite;
+    -ms-animation: fall 1s linear infinite;
+    -o-animation: fall 1s linear infinite;
+    animation: fall 1s linear infinite;
+}
+
+@-webkit-keyframes fall {
+	0% {
+    	margin-top: 0px;
+    }
+    
+	100% {
+    	margin-top: 2000px;
+    }
+}
+
+@-moz-keyframes fall {
+	0% {
+    	margin-top: 0px;
+    }
+    
+	100% {
+    	margin-top: 2000px;
+    }
+}
+
+@-ms-keyframes fall {
+	0% {
+    	margin-top: 0px;
+    }
+    
+	100% {
+    	margin-top: 2000px;
+    }
+}
+
+@-o-keyframes fall {
+	0% {
+    	margin-top: 0px;
+    }
+    
+	100% {
+    	margin-top: 2000px;
+    }
+}
+
+@keyframes fall {
+	0% {
+    	margin-top: 0px;
+    }
+    
+	100% {
+    	margin-top: 2000px;
+    }
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    SNOW
+\*----------------------------------------------------------------------------------------------------------------*/
+.snow {
+	width: 10px;
+	height: 10px;
+    border-radius: 20px;
+    
+    background: #fff;
+    
+	position: absolute;
+	bottom: 200px;
+    
+    -webkit-animation: fall 15s linear infinite;
+    -moz-animation: fall 15s linear infinite;
+    -ms-animation: fall 15s linear infinite;
+    -o-animation: fall 15s linear infinite;
+    animation: fall 15s linear infinite;
+}
